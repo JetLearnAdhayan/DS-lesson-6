@@ -56,3 +56,32 @@ x= [1,3,5,7]
 y= [2,6,4,9]
 plt.bar(x,y,color =  "b")
 plt.show()
+
+plt.bar([1,3,5,7], [2,6,4,9], color = "b")
+plt.bar([2,4,6,8], [3,5,7,9], color = "g")
+plt.show()
+
+plt.bar(["Male Literacy", "Female Literacy"], [90, 95])
+plt.show()
+
+plt.bar(["Dogs", "Cats","Lion", "Tiger"], [90,90,80,10])
+plt.show()
+
+plt.bar(["First Class", "Business Class", "Premium Economy Class", "Economy Class"],[20,30,35,48])
+plt.show()
+
+xVals= []
+yVals = []
+
+for i in range(1,6):
+    x = int(input(f"Write {i} x value: "))
+    xVals.append(x)
+    
+print(xVals) 
+
+for i in range(5):
+    y =(xVals[i] * 4) + 10
+    yVals.append(y)
+
+plt.plot(xVals,yVals)
+plt.show()
